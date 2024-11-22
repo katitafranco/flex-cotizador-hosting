@@ -203,4 +203,74 @@ h1 {
   justify-content: space-between;
   padding: 0;
   font-weight: bold;
+  color: rgb(255, 166, 166);
+}
+
+.card-wrapper {
+  display: flex;
+}
+.card {
+  background-color: rgb(255, 223, 223);
+  border-radius: 10px;
+  margin: 16px;
+  padding: 16px 32px;
+  box-shadow: 0 3px 11px 1px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  font-weight: bold;
+  transition: transform 0.15s ease;
+  color: rgb(44, 44, 44);
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+.card .top-section {
+  padding: 8px;
+  text-transform: uppercase;
+}
+
+.card .price {
+  font-size: 42px;
+  color: rgb(44, 44, 44);
+}
+
+.card hr {
+  width: 50%;
+  border: 1px solid rgb(210, 210, 210);
+  border-radius: 2px;
+}
+
+.card button {
+  border: none;
+  color: white;
+  background-color: goldenrod;
+  padding: 16px;
+  border-radius: 10px;
+  transition: transform 0.15s ease;
+  font-weight: bold;
+  margin: 8px 0;
+}
+
+.card button:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.card .save-header {
+  color: white;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 223, 0, 1) 0%,
+    rgba(218, 165, 32, 1) 40%,
+    rgb(184, 134, 11, 1) 100%
+  );
+  position: absolute;
+  top: -24px;
+  left: 0;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
