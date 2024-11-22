@@ -1,0 +1,103 @@
+body {
+  background-color: rgb(255, 223, 223);
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  color: rgb(44, 44, 44);
+}
+
+h1 {
+  color: inherit;
+  margin: 20px 0;
+}
+
+.container {
+  background-color: white;
+  width: 100%;
+  max-width: 900px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 0 64px 64px 64px;
+  position: relative;
+}
+
+.tabs {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: goldenrod;
+  margin: 0 0 32px 0;
+  padding: 16px;
+}
+
+.tabs p {
+  padding: 8px;
+}
+.tabs p:hover {
+  color: #b1881c;
+  cursor: pointer;
+}
+.tabs .active {
+  color: #b1881c;
+  position: relative;
+}
+.line {
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 98px;
+  background-color: rgb(231, 231, 231);
+}
+.tabs .active::before {
+  content: "";
+  width: 200%;
+  height: 4px;
+  background-color: #b1881c;
+  position: absolute;
+  bottom: -32px;
+  left: -50px;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+.toggle-wrapper {
+  display: flex;
+}
+
+.toggle-wrapper img {
+  height: 40px;
+  margin: 0 16px;
+}
+
+.toggle {
+  background-color: goldenrod;
+  height: 32px;
+  width: 140px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 4px 0 16px;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.toggle span:first-of-type {
+  color: white;
+}
+.toggle span:last-of-type {
+  color: rgb(44, 44, 44);
+  background-color: white;
+  padding: 4px 16px;
+  border-radius: 20px;
+}
