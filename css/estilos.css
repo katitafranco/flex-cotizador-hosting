@@ -164,8 +164,7 @@ h1 {
     rgb(184, 134, 11, 1) 100%
   );
   border-top-left-radius: 20px;
-  border-bottom-left-rad
-  ius: 20px;
+  border-bottom-left-radius: 20px;
   position: absolute;
   top: 0;
   left: 0;
@@ -270,38 +269,37 @@ h1 {
   border-top-right-radius: 10px;
 }
 
-
 /* Responsive - Media Queries */
 @media only screen and (max-widt: 750px) {
-  .card{
+  .card {
     width: 100%;
   }
-  .caja-card{
+  .caja-card {
     width: 90%;
   }
-  .card-wrapper{
+  .card-wrapper {
     flex-wrap: wrap-reverse;
   }
 }
 
 @media only screen and (max-widt: 750px) {
-body{
-  padding: 16px;
-}
-h1{
-  margin: 0 0 16px 0;
-}
-.container{
-padding: 0 16px;
-}
-.caja-card{
-  width: 80%;
-}
-.toggle-wrapper{
-  width: 90%;
-  justify-content: space-around;
-}
-.tabs p{
-font-size: 0.8rem;
-}
+  body {
+    padding: 16px;
+  }
+  h1 {
+    margin: 0 0 16px 0;
+  }
+  .container {
+    padding: 0 16px;
+  }
+  .caja-card {
+    width: 80%;
+  }
+  .toggle-wrapper {
+    width: 90%;
+    justify-content: space-around;
+  }
+  .tabs p {
+    font-size: 0.8rem;
+  }
 }
