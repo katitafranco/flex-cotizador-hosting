@@ -270,7 +270,7 @@ h1 {
 }
 
 /* Responsive - Media Queries */
-@media only screen and (max-widt: 750px) {
+@media only screen and (max-width: 768px) {
   .card {
     width: 100%;
   }
@@ -282,12 +282,13 @@ h1 {
   }
 }
 
-@media only screen and (max-widt: 750px) {
+@media only screen and (max-width: 600px) {
   body {
     padding: 16px;
   }
   h1 {
     margin: 0 0 16px 0;
+    text-align: center;
   }
   .container {
     padding: 0 16px;
@@ -300,6 +301,9 @@ h1 {
     justify-content: space-around;
   }
   .tabs p {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+  }
+  .slider .scale li {
+    font-size: 0.6rem;
   }
 }
